@@ -1,0 +1,348 @@
+body{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto';
+}
+
+nav {
+  background-color: #222222;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+}
+
+.navigation {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  background-color: #ff3300;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  padding: 3em;
+}
+
+.navigation .button {
+  background-color: #ff3300;
+  border-radius: 4px;
+  width: 60px;
+  text-align: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-size: 16px;
+  padding: 1em;
+}
+
+.navigation a:hover {
+  background-color: #ff3300;
+  padding: 1em;
+}
+
+.header-wrapper {
+  background: url(https://assets.onxmaps.com/images/code-test-header.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 536px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0px;
+  top: 80px;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  font-size: 64px;
+  line-height: 120%;
+}
+
+.cta {
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 150%;
+  background-color: #ff3300;
+  border-radius: 4px;
+  width: 100px;
+  height: auto;
+  padding: .5em;
+  margin: 1.5em;
+}
+
+.subhead {
+  color: white;
+  font-size: 1.6em;
+  line-height: 160%;
+  margin: 1em 15em 0 15em;
+}
+
+.image-by-text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.image-by-text-wrapper img {
+  max-width: 795px;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 120%;
+}
+
+.right-wrapper {
+  font-size: 20px;
+  margin: 30px;
+  line-height: 160%;
+}
+
+.phone-feature-wrapper {
+  margin-top: 10em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5em;
+}
+
+.phone-feature-wrapper .copy-wrapper {
+  font-size: 23px;
+  line-height: 160%;
+  margin: 150px;
+  text-align: left;
+  flex-basis: 40%;
+}
+
+.phone-wrapper {
+  max-width: 430px;
+  /* The phone can shrink responsively, but should never get wider than this */
+  position: relative;
+}
+
+.phone-wrapper #new-iphone-frame {
+  width: 90%;
+  position: relative;
+}
+
+.phone-wrapper .phone-screen {
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  right: 16%;
+  bottom: 4%;
+}
+
+.phone-screen .screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 35px;
+}
+
+.blog-feed h3 {
+  font-size: 35px;
+  margin-left:  2em;
+}
+
+.blog-feed .highlight {
+  color: #ff3300;
+}
+
+.blog-posts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.post-wrapper {
+  width: 291px;
+  color: #000;
+  text-decoration: none;
+}
+
+.post-wrapper img {
+  margin: auto;
+  width: 291px;
+  height:300px;
+  object-fit: cover;
+}
+
+.post-wrapper .button {
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #ff3300;
+  padding: 4%;
+  width: 40%;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.footer {
+  width: 100%;
+  height: 609px;
+  background-color: #222222;
+}
+
+/* Mobile - Responsive CSS */
+@media all and (max-width: 1023px) {
+  .navigation {
+    flex-grow: 2;
+    align-self: end;
+    justify-content: flex-end;
+  }
+
+  .header-wrapper {
+    top: 0;
+    flex-wrap: wrap;
+  }
+
+  .subhead {
+    margin: unset;
+    position: absolute;
+    text-align: left;
+    margin: 35em 2em 3em 2em;
+    color: #000;
+  }
+
+  .image-by-text-wrapper {
+    align-items: center;
+    justify-content: center;
+    margin-top: 15em;
+  }
+
+  .right-wrapper {
+    font-size: 14px;
+    margin-left: 2.5em;
+  }
+
+  .right-wrapper h3 {
+    font-size: 24px;
+  }
+
+
+  .blog-posts {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  .post-wrapper {
+    margin: 1em;
+  }
+
+}
+
+@media all and (max-width: 800px) {
+  .navigation li {
+    display: none;
+  }
+
+  .navigation {
+    align-items: flex-end;
+  }
+
+  .phone-feature-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .blog-feed h3 {
+    text-align: center;
+    margin-left: 0em;
+  }
+
+  .image-by-text-wrapper {
+    flex-direction: row-reverse;
+    padding-top: 5em;
+  }
+
+  .image-by-text-wrapper img {
+    width: 461px;
+    margin: 1em;
+  }
+
+}
+
+@media all and (max-width: 600px) {
+
+  h1 {
+    font-size: 54px;
+  }
+
+  .subhead {
+    font-size: 1.2em;
+    margin: 50em 2em 8em 2em;
+  }
+
+  .phone-feature-wrapper .copy-wrapper {
+    margin: 2em;
+  }
+
+  .phone-wrapper #new-iphone-frame {
+    width: 100%;
+  }
+
+  .phone-wrapper .phone-screen {
+    right: 4%;
+  }
+
+  .phone-wrapper {
+    width: 230px;
+    /* The phone can shrink responsively, but should never get wider than this */
+    position: relative;
+  }
+
+  .phone-feature-wrapper {
+    margin-top: 5em;
+  }
+  
+  .image-by-text-wrapper {
+    padding: 1em;
+  }
+
+  .image-by-text-wrapper img {
+    width: 230px;
+    margin-left: -1em;
+  }
+}
+
+@media all and (max-width: 350px) {
+
+  .image-by-text-wrapper img {
+    width: 160px;
+    margin-left: -1em;
+  }
+}
